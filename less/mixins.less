@@ -1,5 +1,6 @@
 // Mixins in here
 
+//flexbox
 .flex-row(@justify-content:space-between){
     display:flex;
     justify-content: @justify-content
@@ -11,6 +12,7 @@
     justify-content: @justify-content
 }
 
+//buttons
 .button(){
     text-align: center;
     font-size: 1.5rem;
@@ -19,4 +21,12 @@
     color: @white;
     border-radius: 1rem;
     width: 80%;
+}
+
+//animation
+.animate(@color){
+    transform: scale(1.2);
+    transition: 0.3s ease-in;
+    transition: 0.2s ease-out;
+    color: darken(@color, 20%);
 }
