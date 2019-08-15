@@ -254,3 +254,12 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border-radius: 1rem;
+  width: 80%;
+}
