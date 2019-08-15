@@ -173,12 +173,18 @@ img {
     padding: 0 2rem;
   }
 }
+.nav-container {
+  display: flex;
+  padding: 3% 0;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+}
 .page-navigation {
   display: flex;
   justify-content: space-between;
-  padding: 3% 11.5%;
+  max-width: 800px;
   width: 100%;
-  border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
   .page-navigation {
@@ -192,7 +198,7 @@ img {
 .page-navigation nav {
   display: flex;
   justify-content: space-evenly;
-  width: 40%;
+  width: 45%;
   align-items: center;
 }
 @media (max-width: 500px) {

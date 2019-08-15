@@ -1,10 +1,15 @@
 // Navigation Styles here
-
-.page-navigation {
-    .flex-row();
-    padding: 3% 11.5%;
+.nav-container {
+    display:flex;
+    padding: 3% 0;
+    justify-content: center;
     width: 100%;
     border-bottom: 2px dashed @navigation-border;
+}
+.page-navigation {
+    .flex-row();
+    max-width: 800px;
+    width: 100%;
 
     @media @mobile {
         .flex-column();
@@ -14,7 +19,7 @@
 
     nav {
         .flex-row(space-evenly);
-        width: 40%;
+        width: 45%;
         align-items: center;
 
         @media @mobile {
