@@ -106,4 +106,40 @@
       }
     }
   }
+
+
+  .contact h2 {
+    text-align: center;
+    border-top: 2px dashed @navigation-border;
+    padding-top: 3%;
+  }
+
+  .contact-form {
+    width: 80%;
+    margin: 2rem auto 5rem auto;
+    .flex-column(space-evenly);
+    border: 0.1rem solid @eastern-blue;
+    padding: 3rem;
+
+    input {
+      height: 4rem;
+    }
+
+    select {
+      height: 3rem;
+    }
+
+    #submit-button {
+      height: 4rem;
+      background-color: @eastern-blue;
+      transition: 0.2s ease out;
+  
+      &:hover {
+        cursor: pointer;
+      }
+      
+    }
+
+}
+
 }// home

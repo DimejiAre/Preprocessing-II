@@ -335,3 +335,31 @@ img {
   border-radius: 1rem;
   width: 80%;
 }
+.home .contact h2 {
+  text-align: center;
+  border-top: 2px dashed #C0C0C0;
+  padding-top: 3%;
+}
+.home .contact-form {
+  width: 80%;
+  margin: 2rem auto 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 0.1rem solid #17A2B8;
+  padding: 3rem;
+}
+.home .contact-form input {
+  height: 4rem;
+}
+.home .contact-form select {
+  height: 3rem;
+}
+.home .contact-form #submit-button {
+  height: 4rem;
+  background-color: #17A2B8;
+  transition: 0.2s ease out;
+}
+.home .contact-form #submit-button:hover {
+  cursor: pointer;
+}
