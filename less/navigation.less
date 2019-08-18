@@ -1,1 +1,39 @@
 // Navigation Styles here
+.nav-container {
+    display:flex;
+    padding: 3% 0;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 2px dashed @navigation-border;
+}
+.page-navigation {
+    .flex-row();
+    max-width: 800px;
+    padding: 0 2%;
+    width: 100%;
+
+    @media @mobile {
+        .flex-column();
+        padding: 3% 0;
+        align-items: center;
+    }
+
+    nav {
+        .flex-row(space-evenly);
+        width: 45%;
+        align-items: center;
+
+        @media @mobile {
+            width: 100%;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: @shark;
+
+        &:hover {
+            .animate(@eastern-blue);
+        }
+    }
+}

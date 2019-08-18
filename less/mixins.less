@@ -1,1 +1,32 @@
 // Mixins in here
+
+//flexbox
+.flex-row(@justify-content:space-between){
+    display:flex;
+    justify-content: @justify-content
+}
+
+.flex-column(@justify-content:space-between){
+    display:flex;
+    flex-direction: column;
+    justify-content: @justify-content
+}
+
+//buttons
+.button(){
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: @eastern-blue;
+    color: @white;
+    border-radius: 1rem;
+    width: 80%;
+}
+
+//animation
+.animate(@color){
+    transform: scale(1.2);
+    transition: 0.3s ease-in;
+    transition: 0.2s ease-out;
+    color: darken(@color, 20%);
+}
